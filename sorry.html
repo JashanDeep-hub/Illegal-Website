@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Her :)</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="assets/site.webmanifest">
+
+    <style>
+        body {
+            background-image: url('assets/Pink-backgrounds-free-download.png');
+            background-size: fill;
+            background-position: center;
+            background-repeat: no-repeat;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+        }
+
+        .text {
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        div {
+            margin: 10px 0px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+            padding:  20px;
+        }
+
+        button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+        background-color: #0a8cd9;
+        }
+
+        #noButton {
+        position: absolute;
+        transition: top 0.4s ease, left 0.4s ease;
+        }
+    </style>
+</head>
+<body>
+    <h1>Main Reason Of Making This Website</h1>
+    <div class="text">
+        <p>Sorry bche 🫠</p>
+        <p>I Never took you for granted and kbi le bi ni skta for granted</p>
+        <p>I Always Loved you from starting to present</p>
+        <p>I am so sorry for if i made you feel that i am taking you for granted</p>
+        <p>I am sorry for making joke of you don't know anything but the reality is you know a lot of thing more then me that i don't even know</p>
+        <p>I am so sorry for everything</p>
+        <p>i know i do a lot of mistakes and itti gltiyo ke baad koi or hoti to shayad chor deti mere ko but you didn't</p>
+        <p>🥹🫂</p>
+        <p>I LOVE YOU YAAR SO MUCH 🥹</p>
+        <p>SORRY FOR BEING DUMB SOMETIME 😓</p>
+        <p>SORRY FOR DOING DUMB STUFF SOMETIMES 😓</p>
+    </div>
+
+    <div>
+        <h1>So, Do you accept his apology?</h1>
+
+        <button onclick="respondYes()">YES</button>
+        <button id="noButton" onclick="respondNo()">NO</button>
+    </div>
+
+    <script>
+    const instaURL = "https://www.instagram.com/deep._.1304/";
+
+    function openInstagram() {
+      window.open(instaURL, "_blank");
+    }
+
+    function respondYes() {
+      alert("Tell Jashan That you Apologized Him with a Sweet Message on IG");
+      openInstagram();
+    }
+
+    function respondNo() {
+      alert('Ok, then reply with "OK" to the link of this website to Jashan on IG');
+      openInstagram();
+    }
+
+    // Make the "NO" button move when hovered
+    const noBtn = document.getElementById("noButton");
+
+    noBtn.addEventListener("mouseover", () => {
+      const x = Math.floor(Math.random() * (window.innerWidth - 100));
+      const y = Math.floor(Math.random() * (window.innerHeight - 100));
+      noBtn.style.position = "absolute";
+      noBtn.style.left = `${x}px`;
+      noBtn.style.top = `${y}px`;
+    });
+  </script>
+</body>
+</html>

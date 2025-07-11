@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Her :)</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="assets/site.webmanifest">
+    
+    <style>
+        body {
+            background-image: url('assets/Pink-backgrounds-free-download.png');
+            background-size: fill;
+            background-position: center;
+            background-repeat: no-repeat;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        input {
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            border: 2px solid #000000;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 80px;
+            background-color: #000000;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <p>The Website is Made with pure Love and with a lot of Puchis 💋</p>
+    <p>There's no AI Used in this Website, That's Made by my self for the person living in my heart without paying any Rent or Tax</p>
+    <p>Only one thing is Written by AI is JavaScript, coz i don't know how to write it.</p>
+    <p>Type "I love you" in the box below to proceed 😋</p>
+    <form onsubmit="return validateInput()" action="main.html" method="get">
+        <label for="loveInput"></label>
+        <input type="text" placeholder="Here babe!!!" name="love" id="loveInput" required>
+        <button type="submit" name="submit">Proceed</button>
+    </form>
+
+    <script>
+        function validateInput() {
+        const input = document.getElementById("loveInput").value.trim();
+        if (input === "I love you") {
+            alert("I love you too! ❤️");
+            return true;
+        } else {
+            alert("You must type exactly: I love you");
+            return false;
+        }
+        }
+    </script>
+</body>
+</html>
